@@ -22,6 +22,9 @@ contador_impar = 0
 contador_positivo = 0
 contador_negativo = 0
 QTD = 5
+
+
+
 for i in range(QTD):
     numero = int(input(f"Digite {i +1}° número: "))
     numeros.append(numero)
