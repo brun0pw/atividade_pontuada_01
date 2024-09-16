@@ -5,7 +5,7 @@
 ## Descrição
 
 Você está fazendo parte de uma equipe de desenvolvimento e precisa corrigir um código que um de seus colegas não concluiu. O objetivo é criar um algoritmo que leia 5 números inteiros e, em seguida, mostre na tela:
-
+"""
 1. A quantidade de números pares e ímpares.
 2. A quantidade de números positivos e negativos.
 3. A quantidade de números inseridos.
@@ -14,7 +14,7 @@ Você está fazendo parte de uma equipe de desenvolvimento e precisa corrigir um
 6. A média de números ímpares.
 7. A média de todos os números inseridos.
 8. Mostrar os números lidos na ordem inversa.
-
+"""
 ## Código
 
 ```python
