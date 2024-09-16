@@ -23,7 +23,7 @@ contador_positivo = 0
 contador_negativo = 0
 QTD = 5
 for i in range(QTD):
-    numero = int(input(f"Digite {i +1}° número "))
+    numero = int(input(f"Digite {i +1}° número: "))
     numeros.append(numero)
 #1. A quantidade de números pares e ímpares.
     if numero == 0  or numero % 2 == 0:
@@ -47,16 +47,17 @@ menor_numero = min(numeros)
 #5. A média de números pares.
 if contador_par != 0:
   media_pares = sum(numeros_pares) / len(numeros_pares)  
+#6. A média de números ímpares.
 if contador_impar != 0:
   media_impares = sum(numeros_impares) / len(numeros_impares)  
+#7. A média de todos os números inseridos.
 media_total = sum(numeros) / len(numeros)
  
+#caso o user não digite numeros pares/impares/positivos/negativos
 if contador_positivo == 0:
   numeros_positivos = 0
 if contador_negativo == 0:
   numeros_negativos = 0
-
-#caso o user não digite numeros pares
 if contador_par == 0:
     numeros_pares.append(0)
 if contador_impar == 0:
@@ -66,10 +67,14 @@ if contador_positivo == 0:
 if contador_negativo == 0:
     numeros_negativos.append(0)
 
-print(f"A quantidade de números pares foram {contador_par}\nA quantidade de números impares foram {contador_impar}")
-print(f"Os números pares foram {numeros_pares}\nOs números impares foram {numeros_impares}")
-print(f"Os números negativos são{numeros_negativos},\n Os números posistivos foram {numeros_positivos}")
 
+#saída do código para contador par e impar
+print(f"A quantidade de números pares foram {contador_par}\nA quantidade de números impares foram {contador_impar}")
+#saída do código para números pares e impares
+print(f"Os números pares foram {numeros_pares}\nOs números impares foram {numeros_impares}")
+#saída do código para números positivos e negativos
+print(f"Os números negativos são{numeros_negativos},\n Os números posistivos foram {numeros_positivos}")
+#saída para a média de todos os números
 print(f" A media total foi de {media_total},\n A media de pares foi de {media_pares}, A media de impares foi  {media_impares}")
 #8. Mostrar os números lidos na ordem inversa.
 for i, numerostotais in enumerate(reversed(numeros)):
